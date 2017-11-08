@@ -14,6 +14,6 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://twtcband.com" # the base hostname & protocol for your site
 twitter_username: TWTCMUSIC
 github_username:  Lamencha
-
+encoding: utf-8
 # Build settings
 markdown: kramdown

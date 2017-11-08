@@ -17,7 +17,10 @@ body {
     font: $base-font-weight #{$base-font-size}/#{$base-line-height} $base-font-family;
     color: $text-color;
     background-color: $background-color;
-    background-image: symtwtc.png;
+    background-image: url("symtwtc.png");
+    background-repeat: no-repeat;
+    background-position: top center;
+
     -webkit-text-size-adjust: 100%;
     -webkit-font-feature-settings: "kern" 1;
     -moz-font-feature-settings: "kern" 1;
@@ -46,6 +49,7 @@ ul, ol, dl, figure,
 img {
     max-width: 100%;
     vertical-align: middle;
+    opacity: 0.5;
 }
 
 
