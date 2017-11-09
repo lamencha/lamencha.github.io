@@ -18,6 +18,7 @@ body {
     color: $text-color;
     background-color: $background-color;
     background-image: url("symtwtc.png");
+
     background-repeat: no-repeat;
     background-position: top center;
 
@@ -49,7 +50,8 @@ ul, ol, dl, figure,
 img {
     max-width: 100%;
     vertical-align: middle;
-    opacity: 0.5;
+
+
 }
 
 
@@ -163,6 +165,7 @@ pre {
 .wrapper {
     max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit} * 2));
     max-width:         calc(#{$content-width} - (#{$spacing-unit} * 2));
+    background-color: white;
     margin-right: auto;
     margin-left: auto;
     padding-right: $spacing-unit;
@@ -177,7 +180,68 @@ pre {
     }
 }
 
+.wrapper-header {
+    max-width: -webkit-calc(#{$content-width1} );
+    max-width:         calc(#{$content-width1} );
+    background-color: white;
+    margin-right: auto;
+    margin-left: auto;
 
+    padding-right: $spacing-unit;
+    padding-left: $spacing-unit;
+    @extend %clearfix;
+
+    @include media-query($on-laptop) {
+        max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit}));
+        max-width:         calc(#{$content-width} - (#{$spacing-unit}));
+        padding-right: $spacing-unit / 2;
+        padding-left: $spacing-unit / 2;
+    }
+}
+
+.wrapper-footer {
+    max-width: -webkit-calc(#{$content-width1} );
+    max-width:         calc(#{$content-width1} );
+    background-color: white;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: $spacing-unit;
+    padding-left: $spacing-unit;
+    @extend %clearfix;
+
+    @include media-query($on-laptop) {
+        max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit}));
+        max-width:         calc(#{$content-width} - (#{$spacing-unit}));
+        padding-right: $spacing-unit / 2;
+        padding-left: $spacing-unit / 2;
+    }
+}
+
+.wrapper2 {
+    max-width: -webkit-calc(#{$content-width1} );
+    max-width:         calc(#{$content-width1} );
+    
+ 
+    background-color: #2d3e50;
+
+        background-repeat: no-repeat;
+    background-position: top center;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: $spacing-unit;
+    padding-left: $spacing-unit;
+        padding-top: 56px;
+    @extend %clearfix;
+
+    @include media-query($on-laptop) {
+        max-width: -webkit-calc(#{$content-width1} - (#{$spacing-unit}));
+        max-width:         calc(#{$content-width1} - (#{$spacing-unit}));
+
+        padding-right: $spacing-unit / 2;
+        padding-left: $spacing-unit / 2;
+    }
+}
 
 /**
  * Clearfix
