@@ -17,8 +17,10 @@ body {
     font: $base-font-weight #{$base-font-size}/#{$base-line-height} $base-font-family;
     color: $text-color;
     background-color: $background-color;
-    background-image: url("symtwtc.png");
-padding: $spacing-unit 0;
+    background-image: url("symtwtcO.png");
+    background-size: 100%;
+    padding: $spacing-unit 0;
+    
     background-repeat: no-repeat;
     background-position: top center;
 
@@ -28,6 +30,12 @@ padding: $spacing-unit 0;
     -o-font-feature-settings: "kern" 1;
     font-feature-settings: "kern" 1;
     font-kerning: normal;
+    
+        @include media-query($on-palm) {
+
+          background-size: 300%;  
+        
+    }
 }
 
 
@@ -193,8 +201,8 @@ pre {
     @extend %clearfix;
 
     @include media-query($on-laptop) {
-        max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit}));
-        max-width:         calc(#{$content-width} - (#{$spacing-unit}));
+        max-width: -webkit-calc(#{$content-width1} );
+        max-width:         calc(#{$content-width1} );
         padding-right: $spacing-unit / 2;
         padding-left: $spacing-unit / 2;
     }
@@ -221,27 +229,27 @@ pre {
 .wrapper2 {
     max-width: -webkit-calc(#{$content-width1} );
     max-width:         calc(#{$content-width1} );
-    
- 
+
     background-color: #2d3e50;
 
-        background-repeat: no-repeat;
+    background-repeat: no-repeat;
     background-position: top center;
     text-align: center;
     margin-right: auto;
     margin-left: auto;
     padding-right: $spacing-unit;
     padding-left: $spacing-unit;
-        padding-top: 56px;
+    padding-top: 60px;
     @extend %clearfix;
 
     @include media-query($on-laptop) {
-        max-width: -webkit-calc(#{$content-width1} - (#{$spacing-unit}));
-        max-width:         calc(#{$content-width1} - (#{$spacing-unit}));
+        max-width: -webkit-calc(#{$content-width1});
+        max-width:         calc(#{$content-width1} );
 
         padding-right: $spacing-unit / 2;
         padding-left: $spacing-unit / 2;
     }
+
 }
 
 /**
