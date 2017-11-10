@@ -249,8 +249,12 @@ pre {
     @include media-query($on-palm) {
         
       background-size: 300%;  
+      
+
     }
 }
+
+
 
 /**
  * Clearfix
