@@ -39,13 +39,18 @@ body {
 
 
     @extend %clearfix;
-    
+            .col-sm-4 img {
+              display: none;
+              }    
 
 
     @include media-query($on-laptop) {
         max-width: -webkit-calc(#{$content-width1} );
         max-width:         calc(#{$content-width1} );
-
+        
+            .col-sm-4 img {
+              display: none;
+              }
         
 
     }
@@ -53,15 +58,25 @@ body {
     @include media-query($on-palm) {
         
           .col-sm-3 img {
-          height: 40%;
-          width: 40%;
-          //display: none;
-      }
+              height: 40%;
+              width: 40%;
+              display: none;
+          }
+      
       .col-sm-3:hover img {
-    height: 42%;
-    width: 42%;
+        height: 42%;
+        width: 42%;
+        }
+        
+            .col-sm-4 img {
+              height: 40%;
+              width: 40%;
+              display: inline;
+              
+          }
+      
 
-}
+        
     }
 }
 
@@ -136,6 +151,8 @@ h1, h2, h3, h4, h5, h6 {
     width: 61%;
 
 }
+
+
 
 /**
  * Links
