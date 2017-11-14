@@ -39,9 +39,16 @@ body {
 
 
     @extend %clearfix;
+    
             .col-sm-4 img {
               display: none;
-              }    
+              }  
+              
+              .item iframe {
+                   height: 550px;
+                   width: 100%;
+                }
+
 
 
     @include media-query($on-laptop) {
@@ -50,6 +57,7 @@ body {
         
             .col-sm-4 img {
               display: none;
+              
               }
         
 
@@ -58,8 +66,7 @@ body {
     @include media-query($on-palm) {
         
           .col-sm-3 img {
-              height: 40%;
-              width: 40%;
+
               display: none;
           }
       
@@ -74,7 +81,17 @@ body {
               display: inline;
               
           }
+          
+             .col-sm-4 {
+              padding-left: 45px;
+              
+          }
       
+              .item iframe {
+                   height: 200px;
+                }
+
+
 
         
     }
@@ -223,9 +240,8 @@ pre {
  * Wrapper
  */
 .wrapper {
-    max-width: -webkit-calc(#{$content-width1} - (#{$spacing-unit} * 2));
-    max-width:         calc(#{$content-width1} - (#{$spacing-unit} * 2));
-    background-color: #97b6c1;
+
+    background-color: $background-color;
     margin-right: auto;
     margin-left: auto;
     padding-right: $spacing-unit;
@@ -234,8 +250,8 @@ pre {
     @extend %clearfix;
 
     @include media-query($on-laptop) {
-        max-width: -webkit-calc(#{$content-width1} - (#{$spacing-unit}));
-        max-width:         calc(#{$content-width1} - (#{$spacing-unit}));
+        max-width: -webkit-calc(#{$content-width1} );
+        max-width:         calc(#{$content-width1});
         padding-right: $spacing-unit / 2;
         padding-left: $spacing-unit / 2;
     }

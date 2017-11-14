@@ -12,7 +12,7 @@
     <img src="css/web2L.jpg"  >
     <img src="css/web2B.png" >
     
-     <div class="row" style= "width: 100%;">
+     <div class="row" style= "width: 100%; ">
     <div class="col-lg-12" style=" text-align: center; "></div>
     <div class="col-sm-3" style=" text-align: center; "><a href="https://open.spotify.com/album/26xyTx5q9QPSj4PxKHZEdB" target="_blank" ><img src="css/spo.png" width="60%" height="60%"></a></div>
     <div class="col-sm-3" style=" text-align: center;"><a href="http://found.ee/SkFJb" target="_blank"><img src="css/Itu.png" width="60%" height="60%"></a></div>
@@ -24,9 +24,10 @@
       <div class="col-sm-4" style=" text-align: center; "><a href="https://open.spotify.com/album/26xyTx5q9QPSj4PxKHZEdB" target="_blank" ><img src="css/spo.png" width="60%" height="60%"></a>
       <a href="http://found.ee/SkFJb" target="_blank"><img src="css/Itu.png" width="60%" height="60%"></a></div>
       </div>
-      <div class="row" style= "width: 100%;">
+      <div class="row" style= "width: 100%;  ">
       <div class="col-sm-4" style=" text-align: center;"><a href="http://found.ee/QJik2" target="_blank"><img src="css/ama.png" width="55%" height="55%"></a>
       <a href="http://found.ee/v0gxi" target="_blank"><img src="css/goo.png" width="55%" height="55%"></a></div>
+      </div>
   </div>
 
   <body>
@@ -67,30 +68,36 @@
         <div class="container">
   <h2>Videos</h2>  
   
-  <div id="myCarousel" class="carousel slide" >
+  <div id="myCarousel" class="carousel slide" style="border: 2px solid white; border-radius: 5px; ">
     <!-- Indicators -->
 
 
     <!-- Wrapper for slides -->
     <div class="carousel-inner">
       <div class="item active">
-        <iframe width="90%" height="450" src="https://www.youtube.com/embed/2BppXeeoLo8?rel=0" frameborder="0" allowfullscreen></iframe>
+        <iframe  src="https://www.youtube.com/embed/2BppXeeoLo8?rel=0" frameborder="0" allowfullscreen></iframe>
       </div>
 
       <div class="item">
-        <iframe width="90%" height="450" src="https://www.youtube.com/embed/jfKIrfRJc0s?rel=0" frameborder="0" allowfullscreen></iframe>
+        <iframe src="https://www.youtube.com/embed/jfKIrfRJc0s?rel=0" frameborder="0" allowfullscreen></iframe>
       </div>
     
       <div class="item">
-        <iframe width="90%" height="450" src="https://www.youtube.com/embed/lT2NeqXCYlQ?rel=0" frameborder="0" allowfullscreen></iframe>
+        <iframe  src="https://www.youtube.com/embed/lT2NeqXCYlQ?rel=0" frameborder="0" allowfullscreen></iframe>
       </div>
     </div>
 <br>
 <br>
-
+<br>
 
     <!-- Left and right controls -->
-    <a class="left carousel-control" href="#myCarousel" style="background: linear-gradient(#97b6c1, #97b6c1); width: 10px;" data-slide="prev">
+   
+    
+        <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+       <a class="left carousel-control" href="#myCarousel" style="background: linear-gradient(#97b6c1, #97b6c1); width: 10px;" data-slide="prev">
       <span class="glyphicon glyphicon-chevron-left"></span>
       <span class="sr-only">Previous</span>
     </a>
@@ -98,12 +105,8 @@
       <span class="glyphicon glyphicon-chevron-right"></span>
       <span class="sr-only">Next</span>
     </a>
-    
-        <ol class="carousel-indicators">
-      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-      <li data-target="#myCarousel" data-slide-to="1"></li>
-      <li data-target="#myCarousel" data-slide-to="2"></li>
     </ol>
+    
   </div>
   
 </div>
