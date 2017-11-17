@@ -15,14 +15,17 @@ layout: default
   <ul class="post-list">
     {% for post in site.posts %}
       <li>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+          <!-- <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a> -->
+          <a>{{ post.title }}</a>
         </h2>
         <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-        <button data-toggle="collapse" data-target="#demo">Collapsible</button>
+        <br>
+        <button data-toggle="collapse" data-target="#demo">View</button>
 
-<div id="demo" class="collapse">
-<a>{{ post.categories }}</a>
-</div>
+        <div id="demo" class="collapse">
+          <a>{{ post.categories }}</a>
+          <img class="post-link" src="{{ post.image }}"></img>
+        </div>
       </li>
     {% endfor %}
   </ul>
