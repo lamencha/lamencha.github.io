@@ -9,11 +9,11 @@
 title: The World To Come
 email: theworldtocome1@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
-  WUT UP BROS GONNA BUILD US A SICK SITE!
+  The Official Web Site For The World To Come
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://twtcband.com" # the base hostname & protocol for your site
 twitter_username: TWTCMUSIC
-github_username:  Lamencha
+#github_username:  Lamencha
 encoding: utf-8
 # Build settings
 markdown: kramdown
