@@ -250,7 +250,7 @@ pre {
     margin-left: auto;
     padding-right: $spacing-unit;
     padding-left: $spacing-unit;
-    padding-bottom: 400px;
+    padding-bottom: 100px;
     @extend %clearfix;
 
     @include media-query($on-laptop) {
