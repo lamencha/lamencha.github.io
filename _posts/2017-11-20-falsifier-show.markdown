@@ -2,8 +2,8 @@
 layout: post
 title:  "Falsifier"
 date:   2017-11-20 13:53:24 +0000
-categories: Tempe, AZ
+categories: "51 West Venu"
 image: css/fals.jpg
-location: The Loudhouse 915 W. Prince RD Tucson, AZ 85705
+location: "51 W Southern Ave, Tempe, AZ 85282"
 tog: fals
 ---
