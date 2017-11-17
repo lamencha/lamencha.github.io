@@ -16,8 +16,8 @@ layout: default
     {% for post in site.posts %}
       <li>
           <!-- <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a> -->
-          <a>{{ post.title }}</a>
-        </h2>
+          <h1>{{ post.title }}</h1>
+         <br>
         <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
         <br>
         <button data-toggle="collapse" data-target="#demo">View</button>
