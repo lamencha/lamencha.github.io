@@ -21,9 +21,9 @@ layout: default
         <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
         <br>
         <br>
-        <button data-toggle="collapse" data-target="#{{ post.title }}">View</button>
+        <button data-toggle="collapse" data-target="#{{ post.tog }}">View</button>
 
-        <div id="{{ post.title }}" class="collapse">
+        <div id="{{ post.tog }}" class="collapse">
           <a>{{ post.categories }}</a>
           <img src="{{ post.image }}"></img>
         </div>
