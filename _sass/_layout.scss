@@ -34,6 +34,7 @@
         
 }
 }
+
 .site-nav {
     float: right;
     line-height: 56px;
@@ -61,7 +62,9 @@
         }
     }
 
-
+.page-link2 {
+    display: none;
+}
 
     @include media-query($on-palm) {
         
@@ -116,13 +119,18 @@
 
 
         .page-link {
+            display: none;
+            
+        }
+        
+            .page-link2 {
             display: block;
             padding: 5px 10px;
 
             &:not(:last-child) {
                 margin-right: 0;
             }
-            margin-left: 20px;
+           
         }
     }
 }
