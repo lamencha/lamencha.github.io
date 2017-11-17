@@ -21,11 +21,11 @@ layout: default
         <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
         <br>
         <br>
-        <button data-toggle="collapse" data-target="#demo">View</button>
+        <button data-toggle="collapse" data-target="#{{ post.title }}">View</button>
 
-        <div id="demo" class="collapse">
+        <div id="{{ post.title }}" class="collapse">
           <a>{{ post.categories }}</a>
-          <img class="post-link" src="{{ post.image }}"></img>
+          <img src="{{ post.image }}"></img>
         </div>
       </li>
     {% endfor %}
