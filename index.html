@@ -16,21 +16,37 @@ layout: default
     {% for post in site.posts %}
       <li>
           <!-- <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a> -->
-          <h1>{{ post.title }}</h1>
+          <h2>{{ post.title }}</h2>
  
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-        <br>
-        <br>
-        <button data-toggle="collapse" data-target="#{{ post.tog }}">View</button>
+       <span class="post-meta"><h3> {{ post.date | date: "%b %-d, %Y" }}</h3></span>
+
+
+        <button class="btn btn-info" data-toggle="collapse" data-target="#{{ post.tog }}">View</button>
 
         <div id="{{ post.tog }}" class="collapse">
           <br>
-          <p>{{ post.venu }}</p>
+          <h4>Bands:</h4>
+          <p>{{ post.bands }}</p>
           <br>
-          <p>Address:</p>
+          <h4>Address:</h4>
           <p>{{ post.location }}</p>
+          
+          <button class="btn btn-info" data-toggle="collapse" data-target="#map">View Map</button>
           <br>
-          <img src="{{ post.image }}"></img>
+          <div id="map" class="collapse">
+            <br>
+          <iframe src="{{ post.map | prepend: site.baseurl }}" width="80%" height="400px" frameborder="0" style="border:0" allowfullscreen></iframe>
+          <br>
+          <br>
+          </div>
+          <br>
+          <br>
+        
+          <a target="_blank" href="{{ post.image }}">
+            <h4>Click To View Full Flyer</h4>
+          <img src="{{ post.image }}" alt="Forest" style="width:150px">
+          </a>
+
         </div>
       </li>
     {% endfor %}
