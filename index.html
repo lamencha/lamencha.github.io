@@ -21,7 +21,7 @@ layout: default
        <span class="post-meta"><h3> {{ post.date | date: "%b %-d, %Y" }}</h3></span>
 
 
-        <button class="btn btn-info" data-toggle="collapse" data-target="#{{ post.tog }}">View</button>
+        <button class="btn btn-primary" data-toggle="collapse" data-target="#{{ post.tog }}">More Info</button>
 
         <div id="{{ post.tog }}" class="collapse">
           <br>
@@ -31,35 +31,58 @@ layout: default
           <h4>Address:</h4>
           <p>{{ post.location }}</p>
           
-          <button class="btn btn-info" data-toggle="collapse" data-target="#map">View Map</button>
+            
+<div class="btn-group">
+<button type="button" class="btn btn-primary" data-toggle="collapse" data-parent="#accordion" href="#collapse1">View Map</button>
+<button type="button" class="btn btn-primary" data-toggle="collapse" data-parent="#accordion" href="#collapse2">View Flyer</button>
+<button type="button" class="btn btn-primary" data-toggle="collapse" data-parent="#accordion" href="#collapse3">Collapsible Group 3</button>
+</div>
+<br>
+<br>
+  <div class="panel-group" id="accordion">
+    <div class="panel panel-default">
+
+      <div id="collapse1" class="panel-collapse collapse" >
+        <div class="panel-body">
           <br>
-          <div id="map" class="collapse">
-            <br>
           <iframe src="{{ post.map | prepend: site.baseurl }}" width="80%" height="400px" frameborder="0" style="border:0" allowfullscreen></iframe>
           <br>
           <br>
           </div>
-          <br>
-          <br>
-        
-          <a target="_blank" href="{{ post.image }}">
+      </div>
+    </div>
+    <div class="panel panel-default" >
+  
+      <div id="collapse2" class="panel-collapse collapse">
+        <div class="panel-body"> 
+        <a target="_blank" href="{{ post.image }}">
             <h4>Click To View Full Flyer</h4>
           <img src="{{ post.image }}" alt="Forest" style="width:150px">
           </a>
+          </div>
+      </div>
+    </div>
+    <div class="panel panel-default">
 
+      <div id="collapse3" class="panel-collapse collapse">
+        <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+      </div>
+    </div>
+  </div> 
+</div>
+         
         </div>
+        
       </li>
+
     {% endfor %}
   </ul>
   
    
   </div>
 
-</div>
- 
-  
-  
-
-</div>
+  </div>
 </div>
 
